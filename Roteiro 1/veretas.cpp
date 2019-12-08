@@ -6,7 +6,7 @@ int main(){
 	int n;
 	while(cin >> n){
 		if(n == 0)
-			break
+			break;
 		int x,y;
 		int lados = 0;
 		int res;
