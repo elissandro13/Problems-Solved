@@ -5,7 +5,9 @@ Some code of competitive programming exercises
 ## Profiles
 
 https://www.urionlinejudge.com.br/judge/pt/profile/236199
+
 https://www.spoj.com/users/elissandro19/
+
 https://codeforces.com/profile/Elissandro
 
 
