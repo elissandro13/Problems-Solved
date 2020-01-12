@@ -12,28 +12,25 @@ int main(){
     for(int i = 0;i<n;i++) scanf("%d",&A[i]);
     
     int resp=0;
-    int B[MAXT];
-    int tamb = 0;
-    B[0] = A[0];
-    
-    for(int i = 0;i<n;i++){
-        tamb++;
-        for(int j = tamb;j>=1;j--){
-            if(A[i] < B[j]){
-                B[j+1] = B[j];
-                resp++;
-            }
-            if(A[i] > B[j]){
-                B[j+1] = A[i];
-                break;
-            }
-        }
-    }
-    
-    for (int i = 0; i < n; i++)
+    int key = 0;
+    for (int i = 1; i < n; i++)
     {
-        cout << B[i] << " ";
+        key = A[i];
+        int j = i - 1;
+        while(j >= 0 && A[j] > key){
+            A[j+1] = A[j]; 
+            j--;
+            resp++;
+        }
+        A[j+1] = key;
+        
     }
+
+    //for(int i = 0;i<n;i++) printf("%d ",A[i]);
+
+    printf("%d\n",resp);
+    
+    
     
     
     return 0;
