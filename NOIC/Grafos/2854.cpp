@@ -20,13 +20,13 @@ void dfs(int x){
 int main(){
     int cont = 0;
     string pessoa1,pessoa2,relacao;
+    
+    cin >> p >> r;
+    cin.ignore();
     for (int i = 0; i < p; i++)
     {
         checar[i] = false;
     }
-    
-    cin >> p >> r;
-    cin.ignore();
     for (int i = 0; i < r; i++)
     {
         cin >> pessoa1 >> relacao >> pessoa2;
