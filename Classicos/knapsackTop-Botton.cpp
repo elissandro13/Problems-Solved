@@ -19,6 +19,8 @@ int solve(int item,int peso){
 
     return dp[item][peso];
 }   
+
+vector<int> asn;
 int main(){
 
     cin >> peso >> item;
