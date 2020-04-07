@@ -20,11 +20,11 @@ int solve(int item,int peso){
     return dp[item][peso];
 }   
 
-vector<int> asn;
+vector<int> ans;
+
 int main(){
 
     cin >> peso >> item;
-
     for (int i = 0; i < item; i++)
     {
         cin >> w[i] >> v[i];
@@ -40,7 +40,5 @@ int main(){
     }
     
     cout << solve(item,peso) << endl;
-    
-
     return 0;
 }
